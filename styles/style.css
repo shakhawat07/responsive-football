@@ -1,0 +1,109 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common style and utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ /* header style */
+
+.header{
+    background-color: #2D25A0;
+    height: 677px;
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    width: 100%;
+}
+
+.header-title{
+    /* position: fixed; */
+    color: white;
+    /* font-weight: 700; */
+    font-size: 64px;
+    line-height: 80px;
+    /* margin: 207px 799px 240px 156px; */
+    margin-top: 127.32px;
+    /* margin-bottom: 240px; */
+    margin-left: 156px;
+    padding-right: 30px;
+}
+.header-banner{
+    margin-top: 153px;
+    margin-right: 140.99px;
+    padding-left: 30px;
+    /* margin: 153px 140.99px 86px 43px ; */
+}
+.header-banner img{
+    width: 556.01px;
+    height: 438px;
+}
+
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+    margin-left: 180px;
+    margin-right: 210px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+}
+.top-player{
+    
+    
+    justify-content: center;
+    
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 30px;  
+    /* background-color: rgba(226, 226, 226, 0.616); */
+    /* box-shadow: 10px 10px 35px lightgray; */ 
+    
+}
+.player{
+    background-color: white;
+    /* display: flex;
+    flex-direction: column;
+    flex-shrink: 0; */
+    /* column-gap: 15px; */
+    width: 330px;
+    height: 474px; 
+    /* padding: 15px; */
+
+    box-shadow: 10px 10px 35px lightgray;
+    margin-bottom: 27px;
+    align-items: flex-start;
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+.player h3{
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.player p{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #6C6C6C;
+}
