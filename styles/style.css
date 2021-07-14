@@ -6,35 +6,27 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
  /* header style */
-
 .header{
+    margin: -8px -8px 0px -8px;
     background-color: #2D25A0;
     height: 677px;
     display: flex;
-    /* position: relative; */
     justify-content: center;
-    width: 100%;
+
 }
 
-.header-title{
-    /* position: fixed; */
+.header-title h1{
     color: white;
-    /* font-weight: 700; */
+    font-weight: 700; 
     font-size: 64px;
-    line-height: 80px;
-    /* margin: 207px 799px 240px 156px; */
-    margin-top: 127.32px;
-    /* margin-bottom: 240px; */
-    margin-left: 156px;
-    padding-right: 30px;
+    line-height: 80px;   
+    margin-right: 60px;
+    margin-top: 153px;
 }
 .header-banner{
-    margin-top: 153px;
-    margin-right: 140.99px;
-    padding-left: 30px;
-    /* margin: 153px 140.99px 86px 43px ; */
+    margin-top: 113px;
+    margin-left: 60px;
 }
 .header-banner img{
     width: 556.01px;
@@ -43,20 +35,13 @@ body{
 
 
 /* main */
-main{
+.top-player{   
     display: flex;
     justify-content: center;
-    margin-left: 180px;
-    margin-right: 210px;
+    /* margin-left: 180px;
+    margin-right: 210px; */
     margin-top: 70px;
-    margin-bottom: 165px;
-}
-.top-player{
-    
-    
-    justify-content: center;
-    
-    
+    margin-bottom: 165px;   
 }
 .players{
     display: grid;
@@ -64,8 +49,7 @@ main{
     grid-column-gap: 30px;
     margin-top: 30px;  
     /* background-color: rgba(226, 226, 226, 0.616); */
-    /* box-shadow: 10px 10px 35px lightgray; */ 
-    
+    /* box-shadow: 10px 10px 35px lightgray; */   
 }
 .player{
     background-color: white;
@@ -106,4 +90,61 @@ main{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #6C6C6C;
+}
+
+/* footer  */
+footer{
+    margin-top: 158px;
+    margin-bottom: 63px;
+    margin-left: 475px;
+    margin-right: 475px;
+    
+}
+.footer-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon, .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.filled{
+    width: 16px;
+    height: 16px;
+    padding: 14px;
+    background-color: rgba(243, 242, 242, 0.781);
+    border-radius: 100px;
+    margin-right: 14px;
+}
+.icon-color{
+    width: 17.07px;
+    height: 17.04px;
+    color: #969BAB;
+}
+
+/* media queries */
+
+/* mobile devices */
+
+@media only screen and (max-width:688px) {
+    
+    ..players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* .header-title, .header-banner, .player */
+    .footer-image{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
 }
