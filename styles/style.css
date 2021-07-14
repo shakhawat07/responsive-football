@@ -15,7 +15,6 @@ body{
     justify-content: center;
 
 }
-
 .header-title h1{
     color: white;
     font-weight: 700; 
@@ -28,11 +27,26 @@ body{
     margin-top: 113px;
     margin-left: 60px;
 }
+
+.header-button{
+    width: 168px;
+    height: 44px;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: 0;
+}
+.fa-arrow-right{
+    margin-left: 9px;
+}
 .header-banner img{
     width: 556.01px;
     height: 438px;
+    transition: transform 2s ease-in-out;
 }
-
+.header:hover .header-banner img{
+    transform: scale(0.75) rotate(180deg);
+}
 
 /* main */
 .top-player{   
@@ -53,10 +67,6 @@ body{
 }
 .player{
     background-color: white;
-    /* display: flex;
-    flex-direction: column;
-    flex-shrink: 0; */
-    /* column-gap: 15px; */
     width: 330px;
     height: 474px; 
     /* padding: 15px; */
@@ -92,6 +102,7 @@ body{
     color: #6C6C6C;
 }
 
+
 /* footer  */
 footer{
     margin-top: 158px;
@@ -119,8 +130,8 @@ footer img{
 .filled{
     width: 16px;
     height: 16px;
-    padding: 14px;
-    background-color: rgba(243, 242, 242, 0.781);
+    padding: 7px;
+    /* background-color: rgba(243, 242, 242, 0.781); */
     border-radius: 100px;
     margin-right: 14px;
 }
@@ -134,16 +145,34 @@ footer img{
 
 /* mobile devices */
 
-@media only screen and (max-width:688px) {
-    
-    ..players {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    /* .header-title, .header-banner, .player */
-    .footer-image{
+@media only screen and (max-width:480px) {
+    .header{
         display: flex;
         flex-direction: column;
+        height: 1100px;
+    }
+    .header-title{
+        transform: scale(0.75);
+        margin-left: -35px;
+        align-items: flex-start;
+    }
+    .header-banner img{
+        transform: scale(0.50);
+        margin-left: -130px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -35px;
+        margin-right: -35px;
+    }
+    
+    .footer-image, .social-icon, .copyright {   
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+        transform: scale(0.5);
+        margin-left: -550px;
     }
     
     
